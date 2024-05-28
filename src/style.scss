@@ -67,3 +67,14 @@
   padding: 12% .5em 10% .5em;
   margin: 0;
 }
+
+@media screen and (max-width: 782px) {
+  .formo-slider-slide-recipe--cheesename {
+    top: .75em;
+  }
+  .formo-slider-slide-recipe--title,
+  .formo-slider-slide-recipe--title a {
+    align-items: flex-start;
+    padding: calc( 3.75 * var(--wp--preset--font-size--large)) .5em .5em .5em;
+  }
+}
