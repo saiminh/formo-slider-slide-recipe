@@ -2,7 +2,9 @@
   position: absolute;
   z-index: 3;
 }
-.formo-slider-slide-recipe--cheesename,
+.formo-slider-slide-recipe--cheesename {
+  z-index: 3;
+}
 .formo-slider-slide-recipe--title {
   z-index: 2;
 }
