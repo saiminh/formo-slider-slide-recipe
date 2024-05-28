@@ -1,0 +1,69 @@
+.formo-slider-slide-recipe {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.8755274262;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--wp--preset--color--formo-darktone);
+}
+.formo-slider-slide-recipe--image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  filter: brightness(0.8);
+  
+  
+  & img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+    opacity: 0;
+    transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+}
+.active .formo-slider-slide-recipe--image img {
+  opacity: 1;
+  transform: scale(1);
+
+}
+.formo-slider-slide-recipe--cheesename,
+.formo-slider-slide-recipe--title {
+  text-align: center;
+  color: var(--wp--preset--color--formo-cream);
+}
+.formo-slider-slide-recipe--cheesename {
+  position: absolute;
+  z-index: 1;
+  font-size: var(--wp--preset--font-size--large);
+  text-transform: uppercase;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  
+}
+.formo-slider-slide-recipe--title a,
+.formo-slider-slide-recipe--title {
+  font-size: var(--wp--preset--font-size--xx-large);
+  color: var(--wp--preset--color--formo-cream);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12% .5em 10% .5em;
+  margin: 0;
+}
