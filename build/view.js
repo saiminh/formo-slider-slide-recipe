@@ -1,1 +1,0 @@
-console.log("Hello World! (from create-block-formo-slider-slide-recipe block)");
